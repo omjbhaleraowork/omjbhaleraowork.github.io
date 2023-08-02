@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Alarm Clock</title>
+        <link href="alarm.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- container which contain our app -->
+        <div class="container">
+            <!-- you can select the which clock to show digital or analog -->
+                <div id="analogClock">
+                    <div id="point"></div>
+                    <div class="hour hour-1">1</div>
+                    <div class="hour hour-2">2</div>
+                    <div class="hour hour-3">3</div>
+                    <div class="hour hour-4">4</div>
+                    <div class="hour hour-5">5</div>
+                    <div class="hour hour-6">6</div>
+                    <div class="hour hour-7">7</div>
+                    <div class="hour hour-8">8</div>
+                    <div class="hour hour-9">9</div>
+                    <div class="hour hour-10">10</div>
+                    <div class="hour hour-11">11</div>
+                    <div class="hour hour-12">12</div>
+                    <div class="brand">Quartz</div>
+                    <div class="minute-hand-wrapper" id="min-hand">
+                        <div class="minute-hand">
+                            <div class="hand"></div>
+                            <div class="arrow">V</div>
+                        </div>
+                    </div>
+                    <div class="hour-hand-wrapper" id="hr-hand">
+                        <div class="hour-hand">
+                            <div class="hand"></div>
+                            <div class="arrow">V</div>
+                        </div>
+                    </div>
+                    <div class="sec-hand-wrapper" id="sec-hand">
+                        <div class="sec-hand">
+                            <div class="hand"></div>
+                        
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- input box to set alarm -->
+            <input type="datetime-local" name="alarmType" />
+            
+            <!-- buttons to set, clear and watch all alarm -->
+            <div class="controls">
+                <button class="button set-alarm" onclick="setAlarm()">Set Alarm</button>
+                <button class="button clear-alarm" onclick="stopAlarm()">Stop Alarm</button>
+            </div>
+
+        </div>
+        <script src="alarm.js"></script>
+    </body>
+</html>

@@ -1,0 +1,234 @@
+/* css rule for body of webpage */
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 121, 152);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* css for container which containe our alarm clock*/
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* css for analog clock */
+#analogClock{
+    width: 400px;
+    height: 400px;
+    border: 20px solid rgb(194, 211, 0);
+    border-radius: 50%;
+    position: relative;
+    margin-left: 0 auto;
+    /* display: none; */
+}
+/* css for center point */
+#point{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(194, 211, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 195px;
+    left: 195px;
+
+}
+ /* general rule for all clock digits */
+.hour{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(194, 211, 0);
+    position: absolute;
+}
+/* secific css for clock digit */
+.hour-1{
+    top: 30px;
+    right: 100px;
+
+}
+.hour-2{
+    top: 95px;
+    right: 30px;
+
+}
+.hour-3{
+    top: 189px;
+    right: 5px;
+
+}
+.hour-4{
+    top: 280px;
+    right: 30px;
+
+}
+.hour-5{
+    top: 355px;
+    right: 100px;
+
+}
+.hour-6{
+    top: 375px;
+    right: 190px;
+
+}
+.hour-7{
+    top: 355px;
+    right: 280px;
+
+}
+.hour-8{
+    top: 280px;
+    right: 360px;
+
+}
+.hour-9{
+    top: 189px;
+    right: 385px;
+
+}
+.hour-10{
+    top: 95px;
+    right: 350px;
+
+}
+.hour-11{
+    top: 30px;
+    right: 280px;
+
+}
+.hour-12{
+    top: 5px;
+    right: 190px;
+
+}
+/* css for brand Name */
+.brand{
+    font-size :20px;
+    font-weight: bold;
+    color: rgb(194, 211, 0);
+    position: absolute;
+    top: 80px;
+    left: 170px;
+ }
+/* css rule for minute hand */
+.minute-hand-wrapper{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    left: 51px;
+    border-radius: 50%;
+}
+.minute-hand{
+    position: relative;
+}
+.minute-hand .hand{
+    width: 4px;
+    height: 150px;
+    background-color: rgb(194, 211, 0);
+    position: absolute;
+    left: 147.5px;
+}
+.minute-hand .arrow{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(194, 211, 0);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 139.5px;
+    top: -7px;
+}
+/* css rule for hour hand */
+.hour-hand-wrapper{
+    width: 200px;
+    height: 200px;
+    
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border-radius: 50%;
+}
+.hour-hand{
+    position: relative;
+}
+.hour-hand .hand{
+    width: 3px;
+    height: 100px;
+    background-color: rgb(194, 211, 0);
+    position: absolute;
+    left: 100px;
+}
+.hour-hand .arrow{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(194, 211, 0);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 95px;
+    top: -9px;
+}
+/* css rule for sec hand */
+.sec-hand-wrapper{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 76px;
+    left: 75px;
+    border-radius: 50%;
+}
+.sec-hand{
+    position: relative;
+}
+.sec-hand .hand{
+    width: 3.5px;
+    height: 125px;
+    background-color: rgb(194, 211, 0);
+    position: absolute;
+    left: 124px;
+}
+
+/* css for input box for setting alarm */
+input{
+    border: 2px solid whitesmoke;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 50vw;
+    margin-top: 3vh;
+}
+
+/* ṭhis is a div which contain 3 buttons set Alarm, clear alarm and all alarm */
+.controls{
+    margin-top: 5vh;
+}
+
+/* this is class is provide to all 3 button general rule for all button in our app */
+.button{
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    
+    padding: 8px 60px;
+    margin-left: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* set alarm button specfic rule */
+.set-alarm{
+    background-color: rgb(27, 74, 27);
+}
+/* clear alarm button specific rule */
+.clear-alarm{
+    background-color: rgb(109, 42, 42);
+}
+/* all alarm button specific rule */
+.all-alarm{
+    background-color: rgb(131, 120, 120);
+}
+
